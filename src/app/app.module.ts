@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ListelivreComponent } from './listelivre/listelivre.component';
 import { BannerComponent } from './banner/banner.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
     ListelivreComponent,
     BannerComponent,
     SearchbarComponent,
+    SliderComponent,
 
 
   ],
