@@ -1,3 +1,4 @@
+import { ListelivreComponent } from './../listelivre/listelivre.component';
 
 import { LivreService } from './../livre.service';
 
@@ -11,6 +12,7 @@ import { Livre } from '../livre';
   styleUrls: ['./singlelivre.component.css']
 })
 export class SinglelivreComponent implements OnInit {
+name: String ;
 
   single: Livre;
   // tslint:disable-next-line:no-shadowed-variable
@@ -18,6 +20,7 @@ export class SinglelivreComponent implements OnInit {
 
   ngOnInit() {
     const id = this.route.snapshot.params['id'];
+    this.service.getlivrebyID(id).subscribe((response) => this.single = response);
 
   }
 

@@ -8,18 +8,11 @@ import { Livre } from '../livre';
   styleUrls: ['./listelivre.component.css']
 })
 export class ListelivreComponent implements OnInit {
-livres: Livre [];
+ livres: Livre [];
   constructor(private service: LivreService) { }
 
   ngOnInit() {
    this.service.getlivres().subscribe((response) => this.livres = response);
   }
-  getLivreById(id: number) {
-    const singlelivre = this.livres.find(
-      (singlelivreObject) => {
-        return singlelivreObject.id === id ;
-      }
-    );
-    return singlelivre;
-      }
+
 }

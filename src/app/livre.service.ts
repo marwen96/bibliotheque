@@ -14,5 +14,7 @@ export class LivreService {
   return this.http.get<Livre []>('http://54.38.33.183:8081/bibliotheque/api/livres');
 
 }
-
+getlivrebyID(id: number) {
+  return this.http.get<Livre> ('http://54.38.33.183:8081/bibliotheque/api/livres/{id}');
+}
 }
