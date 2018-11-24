@@ -2,10 +2,10 @@
   <!-- Header desktop -->
   <div class="container-menu-desktop container">
     <div class="wrap-menu-desktop">
-      <nav class="navbar navbar-expand-md container-menu-desktop">
+      <nav class="navbar navbar-expand-md container-menu-desktop" >
 
         <!-- Logo desktop -->
-        <a href="#" class="logo">
+        <a routerLink="" class="logo">
             <img src="../assets/images/icons/logo.png" class="logo-dimensions normal-logo" id="site-logo" alt="IMG-LOGO" width="170" height="33.792048929664">
                 <style>
                 .logo-dimensions {
@@ -19,9 +19,9 @@
         <!-- Menu desktop -->
         <div class="menu-desktop">
           <ul class="main-menu">
-            <li class="active-menu">
-              <a href="index.html">HOME</a>
-              <span class="sr-only">(current)</span>
+            <li routerLinkActive="active-menu">
+              <a routerLink="">HOME</a>
+
             </li>
 
             <li>
@@ -38,12 +38,12 @@
             </li>
 
 
-            <li>
-              <a href="about.html">ABOUT</a>
+            <li routerLinkActive="active-menu">
+              <a routerLink="about">ABOUT</a>
             </li>
 
-            <li>
-              <a href="contact.html">CONTACT</a>
+            <li routerLinkActive="active-menu">
+              <a routerLink="contact">CONTACT</a>
             </li>
           </ul>
         </div>
