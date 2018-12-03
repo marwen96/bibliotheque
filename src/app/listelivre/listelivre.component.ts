@@ -9,10 +9,12 @@ import { Livre } from '../livre';
 })
 export class ListelivreComponent implements OnInit {
  livres: Livre [];
-  constructor(private service: LivreService) { }
+  constructor(public service: LivreService) { }
 
   ngOnInit() {
    this.service.getlivres().subscribe((response) => this.livres = response);
   }
-
+  addToFavorite() {
+    this.service.addToFavorite();
+  }
 }

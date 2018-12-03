@@ -22,5 +22,10 @@ single: Observable<Livre> ;
      this.single = this.service.getlivrebyID(id);
 
   }
-
+addToCart() {
+this.service.addToCart();
+}
+addToFavorite() {
+this.service.addToFavorite();
+}
 }

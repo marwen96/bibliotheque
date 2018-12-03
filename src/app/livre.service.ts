@@ -8,6 +8,8 @@ import { Livre } from './livre';
 })
 export class LivreService {
 livre$ ;
+Cart: any = 0 ;
+favorite: any = 0 ;
   constructor(private http: HttpClient) { }
 
   getlivres() {
@@ -16,5 +18,11 @@ livre$ ;
 }
 getlivrebyID(id: number) {
    return this.http.get<Livre >('http://54.38.33.183:8081/bibliotheque/api/livres/' + id);
+}
+addToCart() {
+this.Cart = this.Cart + 1;
+}
+addToFavorite() {
+  this.favorite = this.favorite + 1 ;
 }
 }

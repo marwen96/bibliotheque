@@ -7,9 +7,12 @@
       <h5 class="card-title" ><strong>{{livre.title}}</strong></h5>
       <br/>
       <h4>{{livre.prix}} DT</h4>
+        <a [routerLink]="['/livres' , livre.id]">      <button class="btn btn-info"><i class="fas fa-search-plus"  ></i></button>
+        </a>
 
-<a [routerLink]="['/livres' , livre.id]">      <button class="btn btn-info"><i class="fas fa-search-plus"  ></i></button>
-</a>
+
+
+
     </div>
   </div>
 </div>
