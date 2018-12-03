@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { ListelivreComponent } from './../listelivre/listelivre.component';
 
 import { LivreService } from './../livre.service';
@@ -13,13 +14,12 @@ import { Livre } from '../livre';
 })
 export class SinglelivreComponent implements OnInit {
 name: String ;
-single: Livre = null ;
-
+single: Observable<Livre> ;
   constructor(private service: LivreService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    // const id = this.route.snapshot.params['id'];
-    this.service.getlivrebyID().subscribe((response) => this.single = response);
+     const id = this.route.snapshot.params['id'];
+     this.single = this.service.getlivrebyID(id);
 
   }
 

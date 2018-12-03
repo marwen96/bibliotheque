@@ -7,14 +7,14 @@ import { Livre } from './livre';
   providedIn: 'root'
 })
 export class LivreService {
-
+livre$ ;
   constructor(private http: HttpClient) { }
 
   getlivres() {
   return this.http.get<Livre []>('http://54.38.33.183:8081/bibliotheque/api/livres');
 
 }
-getlivrebyID() {
-  return this.http.get<Livre >('http://54.38.33.183:8081/bibliotheque/api/livres/1');
+getlivrebyID(id: number) {
+   return this.http.get<Livre >('http://54.38.33.183:8081/bibliotheque/api/livres/' + id);
 }
 }

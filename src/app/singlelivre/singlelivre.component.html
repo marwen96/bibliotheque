@@ -1,1 +1,7 @@
-<h1>{{single.title}}</h1>
+<h1>{{(single | async).title}}</h1>
+<h1>{{(single | async).prix}}</h1>
+<h1>{{(single | async).ecrivain}}</h1>
+<h1>{{(single | async).disponible}}</h1>
+<h1>{{(single | async).description}}</h1>
+<h1>{{(single | async).dateSortie}}</h1>
+
