@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -15,13 +16,20 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SinglelivreComponent } from './singlelivre/singlelivre.component';
+import { AngularFireModule } from 'angularfire2' ;
+import { AngularFireDatabaseModule } from 'angularfire2/database' ;
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { LoginComponent } from './login/login.component' ;
+
+
 
 const appRoutes: Routes = [
 {path: 'contact', component: ContactComponent},
 {path: '', component: HomeComponent},
 {path: 'about', component: AboutComponent},
 {path: 'livres', component: ListelivreComponent},
-{path: 'livres/:id', component: SinglelivreComponent}
+{path: 'livres/:id', component: SinglelivreComponent},
+{path: 'login', component: LoginComponent}
 
 ];
 
@@ -38,6 +46,7 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutComponent,
     SinglelivreComponent,
+    LoginComponent,
 
 
   ],
@@ -45,7 +54,10 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

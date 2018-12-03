@@ -14,3 +14,6 @@
 @import "assets/css/main.css";
 @import "assets/fonts/iconic/css/material-design-iconic-font.min.css";
 
+body{
+  padding-top: 80px;
+}
