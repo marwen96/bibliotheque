@@ -25,7 +25,5 @@ single: Observable<Livre> ;
 addToCart() {
 this.service.addToCart();
 }
-addToFavorite() {
-this.service.addToFavorite();
-}
+
 }

@@ -14,7 +14,7 @@ export class ListelivreComponent implements OnInit {
   ngOnInit() {
    this.service.getlivres().subscribe((response) => this.livres = response);
   }
-  addToFavorite() {
-    this.service.addToFavorite();
-  }
+addToFavorite() {
+  this.service.addToFavorite();
+}
 }
