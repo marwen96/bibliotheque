@@ -13,11 +13,11 @@ export class LivreService {
   constructor(private http: HttpClient) { }
 
   getlivres() {
-  return this.http.get<Livre []>('http://54.38.33.183:8081/bibliotheque/api/livres');
+  return this.http.get<Livre []>('http://localhost:3000/livres');
 
 }
 getlivrebyID(id: number) {
-   return this.http.get<Livre >('http://54.38.33.183:8081/bibliotheque/api/livres/' + id);
+   return this.http.get<Livre >('http://localhost:3000/livres/' + id);
 }
 
 }

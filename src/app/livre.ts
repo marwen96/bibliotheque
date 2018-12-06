@@ -1,10 +1,9 @@
 export interface Livre {
   id: number ;
   title: string;
-  idBibliotheque: string;
   ecrivain: string;
+  categorie: string;
   prix: number;
-  disponible: boolean;
   description: string;
   dateSortie: Date;
 }

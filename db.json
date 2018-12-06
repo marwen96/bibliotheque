@@ -1,0 +1,43 @@
+{
+  "livres":[
+    {
+      "id": "1",
+      "title": "Le Crime de l'Orient-Express",
+      "ecrivain": "Agatha Christie",
+      "prix": 15,
+      "categorie": "crime",
+      "description": "Le Crime de l'Orient-Express est un roman policier d'Agatha Christie publié le 1ᵉʳ janvier 1934 au Royaume-Uni, mettant en scène Hercule Poirot. Il est publié la même année aux États-Unis sous le titre Murder in the Calais Coach, puis en France"},
+
+    {
+      "id": "2",
+      "title": "Les Cent Meilleurs Romans policiers",
+      "ecrivain": "Crime Writers' Association",
+      "prix": 50,
+      "categorie":"crime",
+      "description": "Les Cent Meilleurs Romans policiers de tous les temps est une liste estimée, publiée en 1990 par la Crime Writers' Association, une association d'auteurs basée au Royaume-Uni"},
+
+    {
+      "id": "3",
+      "title": "Le cercle des impunis ",
+      "ecrivain": "Paul Merault",
+      "prix": 30,
+      "categorie":"crime",
+      "description": "Des brumes de Londres au soleil éclatant de Marseille, des policiers sont assassinés dans la plus sordide des mises en scène, avec un même symbole tatoué sur la langue. Scotland Yard et la police française s’allient pour remonter la piste de ces vengeances diaboliques. Des deux côtés de la Manche, les meilleurs enquêteurs associent leurs méthodes pour traquer celui qui les humilie en s’attaquant aux plus grands flics. Quelle folie humaine peut réussir à « opérer  avec une telle expertise chirurgicale ?"},
+
+    {
+      "id": "4",
+      "title": "Les enquêtes de Nicolas Le Floch - : Le prince de Cochinchine ",
+      "ecrivain": "Jean-François Parot",
+      "prix": 70,
+      "categorie": "crime",
+      "description": "Décédé il y a quelques mois, Jean-François Parot avait écrit un dernier tome des aventures de Nicolas Le Floch, son héros fétiche. Le Prince de Cochinchine demeure dans la droite ligne des volumes précédents, avec tous les ingrédients d’un polar historique. Autour d’un complot visant à accuser le héros d’un meurtre qu’il n’a pas commis, l’auteur tire une intrigue pleine de péripéties, avec toujours un parfum de mystère et restitue parfaitement l'ambiance de l’Ancien Régime. Son personnage principal, très charismatique"},
+
+    {
+      "id": "5",
+      "title": "L'île au rébus ",
+      "ecrivain": "Peter May ",
+      "prix": 35,
+      "categorie":"crime",
+      "description": "Voilà vingt ans qu’Adam Killian a été assassiné sur l’île de Groix. Et depuis vingt ans rien n'a été déplacé dans son bureau, là où le défunt a laissé des indices qui permettraient à son fils de confondre son meurtrier, sans imaginer que celui-ci trouverait la mort quelques jours après lui. Tenu par sa promesse d’élucider cette affaire, Enzo Macleod, le spécialiste des scènes de crime, débarque sur la petite île bretonne"}
+  ]
+}
