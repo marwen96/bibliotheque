@@ -2,6 +2,7 @@ import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,7 +20,8 @@ import { SinglelivreComponent } from './singlelivre/singlelivre.component';
 import { AngularFireModule } from 'angularfire2' ;
 import { AngularFireDatabaseModule } from 'angularfire2/database' ;
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { LoginComponent } from './login/login.component' ;
+import { LoginComponent } from './login/login.component';
+import { CartShoppingComponent } from './cart-shopping/cart-shopping.component';
 
 
 
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
 {path: 'about', component: AboutComponent},
 {path: 'livres', component: ListelivreComponent},
 {path: 'livres/:id', component: SinglelivreComponent},
-{path: 'login', component: LoginComponent}
+{path: 'login', component: LoginComponent},
+{path: 'cartshop', component: CartShoppingComponent},
 
 ];
 
@@ -47,6 +50,8 @@ const appRoutes: Routes = [
     AboutComponent,
     SinglelivreComponent,
     LoginComponent,
+    CartShoppingComponent,
+
 
 
   ],
@@ -57,7 +62,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

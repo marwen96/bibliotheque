@@ -1,9 +1,9 @@
-<h1>{{(single | async).title}}</h1>
-<h1>{{(single | async).prix}}</h1>
-<h1>{{(single | async).ecrivain}}</h1>
-<h1>{{(single | async).disponible}}</h1>
-<h1>{{(single | async).description}}</h1>
-<h1>{{(single | async).dateSortie}}</h1>
+<h1 *ngIf="(single | async)">{{(single | async).title}}</h1>
+<h1 *ngIf="(single | async)">{{(single | async).prix}}</h1>
+<h1 *ngIf="(single | async)">{{(single | async).ecrivain}}</h1>
+<h1 *ngIf="(single | async)">{{(single | async).disponible}}</h1>
+<h1 *ngIf="(single | async)">{{(single | async).description}}</h1>
+<h1 *ngIf="(single | async)">{{(single | async).dateSortie}}</h1>
 <button class="btn btn-success" (click)="addToCart()">ADD TO CART</button>
 
 

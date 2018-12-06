@@ -64,13 +64,10 @@
             </div>
 
 
-          <div *ngIf="_authservice.user$ | async as user" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" [attr.data-notify]="service.Cart">
+          <a  routerLink="cartshop" *ngIf="_authservice.user$ | async as user" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" [attr.data-notify]="_cartshopservice.Cartes.length">
             <i class="zmdi zmdi-shopping-cart"></i>
-          </div>
-
-          <a *ngIf="_authservice.user$ | async as user" href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" [attr.data-notify]="service.favorite">
-            <i class="zmdi zmdi-favorite-outline"></i>
           </a>
+
         </div>
       </nav>
     </div>

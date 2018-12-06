@@ -1,3 +1,4 @@
+import { CartshopService } from './../cartshop.service';
 import { Observable } from 'rxjs';
 import { ListelivreComponent } from './../listelivre/listelivre.component';
 
@@ -15,7 +16,7 @@ import { Livre } from '../livre';
 export class SinglelivreComponent implements OnInit {
 name: String ;
 single: Observable<Livre> ;
-  constructor(private service: LivreService, private route: ActivatedRoute) { }
+  constructor(private _cartshopservice: CartshopService, private service: LivreService, private route: ActivatedRoute) { }
 
   ngOnInit() {
      const id = this.route.snapshot.params['id'];
@@ -23,7 +24,7 @@ single: Observable<Livre> ;
 
   }
 addToCart() {
-this.service.addToCart();
+this._cartshopservice.addToCart(this.single);
 }
 
 }

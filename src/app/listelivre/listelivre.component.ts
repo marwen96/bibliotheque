@@ -1,3 +1,5 @@
+import { CartshopService } from './../cartshop.service';
+
 import { LivreService } from './../livre.service';
 import { Component, OnInit } from '@angular/core';
 import { Livre } from '../livre';
@@ -9,12 +11,12 @@ import { Livre } from '../livre';
 })
 export class ListelivreComponent implements OnInit {
  livres: Livre [];
-  constructor(public service: LivreService) { }
+  constructor(public service: LivreService, private _carteservice: CartshopService) { }
 
   ngOnInit() {
    this.service.getlivres().subscribe((response) => this.livres = response);
   }
-addToFavorite() {
-  this.service.addToFavorite();
-}
+addTocarte(livre) {
+
+  this._carteservice.addToCart(livre); }
 }

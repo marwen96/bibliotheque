@@ -1,6 +1,9 @@
+import { CartshopService } from './../cartshop.service';
+import { CartShoppingComponent } from './../cart-shopping/cart-shopping.component';
 import { LivreService } from './../livre.service';
 import { AuthService } from './../auth.service';
 import { Component, OnInit } from '@angular/core';
+
 
 
 @Component({
@@ -10,7 +13,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public _authservice: AuthService, public service: LivreService) {
+  constructor(public _authservice: AuthService,
+     public service: LivreService, public _cartshopservice: CartshopService) {
 
    }
 
