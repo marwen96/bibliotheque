@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-keyword: String ;
+
   constructor(public _authservice: AuthService,
      public service: LivreService, public _cartshopservice: CartshopService) {
 
