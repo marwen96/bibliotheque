@@ -16,15 +16,18 @@ import { Livre } from '../livre';
 export class SinglelivreComponent implements OnInit {
 name: String ;
 single: Livre = null;
+livres: Livre [];
+searchtext: String;
   constructor(private _cartshopservice: CartshopService, private service: LivreService, private route: ActivatedRoute) { }
 
   ngOnInit() {
      const id = this.route.snapshot.params['id'];
      this.service.getlivrebyID(id).subscribe((response) => this.single = response);
+      this.service.getlivres().subscribe((response) => this.livres = response );
 
 
   }
-addToCart(livre) {
+addTocarte(livre) {
 
 this._cartshopservice.addToCart(livre);
 }

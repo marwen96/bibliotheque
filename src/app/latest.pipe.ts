@@ -4,11 +4,11 @@ import { Livre } from './livre';
 @Pipe({
   name: 'latest'
 })
-export class FilterPipe implements PipeTransform {
-  transform(items: Livre[], year: number): any[] {
+export class LatestPipe implements PipeTransform {
+  transform(items: Livre[], year: string , datelivre: String): Livre[] {
     if (!items) { return []; }
 return items.filter( it => {
-      return it.title.toLowerCase().includes(searchText);
+      return datelivre.includes(year);
     });
    }
 }

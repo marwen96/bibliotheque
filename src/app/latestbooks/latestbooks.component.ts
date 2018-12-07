@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Livre } from '../livre';
+import { LivreService } from '../livre.service';
+import { CartshopService } from '../cartshop.service';
 
 @Component({
   selector: 'app-latestbooks',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LatestbooksComponent implements OnInit {
 
-  constructor() { }
+  livres: Livre [];
+ searchtext: String;
+  constructor(public service: LivreService, private _carteservice: CartshopService) { }
 
   ngOnInit() {
+   this.service.getlivres().subscribe((response) => this.livres = response);
   }
+addTocarte(livre) {
 
+  this._carteservice.addToCart(livre); }
 }

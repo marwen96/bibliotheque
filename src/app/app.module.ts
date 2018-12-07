@@ -1,3 +1,4 @@
+import { LatestPipe } from './latest.pipe';
 import { FilterPipe } from './../filter.pipe';
 import { HistoricalComponent } from './historical/historical.component';
 import { environment } from './../environments/environment';
@@ -70,7 +71,9 @@ const appRoutes: Routes = [
     HistoricalComponent,
 
     FilterPipe,
-    LatestbooksComponent
+    LatestbooksComponent,
+    LatestPipe
+
 
 
 
