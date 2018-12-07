@@ -13,7 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListelivreComponent } from './listelivre/listelivre.component';
 import { BannerComponent } from './banner/banner.component';
-import { SearchbarComponent } from './searchbar/searchbar.component';
+
 import { SliderComponent } from './slider/slider.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
@@ -29,7 +29,7 @@ import { CrimeComponent } from './crime/crime.component';
 import { BiographyComponent } from './biography/biography.component';
 import { RomanceComponent } from './romance/romance.component';
 import { HttpXsrfInterceptor } from '@angular/common/http/src/xsrf';
-import { SearchedbookComponent } from './searchedbook/searchedbook.component';
+
 import { LatestbooksComponent } from './latestbooks/latestbooks.component';
 
 
@@ -46,7 +46,7 @@ const appRoutes: Routes = [
 {path: 'categorie/biography', component: BiographyComponent},
 {path: 'categorie/romance', component: RomanceComponent},
 {path: 'categorie/historical', component: HistoricalComponent },
-{path: 'search', component: SearchedbookComponent}
+{path: 'latest', component: LatestbooksComponent}
 
 ];
 
@@ -57,7 +57,6 @@ const appRoutes: Routes = [
     FooterComponent,
     ListelivreComponent,
     BannerComponent,
-    SearchbarComponent,
     SliderComponent,
     ContactComponent,
     HomeComponent,
@@ -69,7 +68,7 @@ const appRoutes: Routes = [
     BiographyComponent,
     RomanceComponent,
     HistoricalComponent,
-    SearchedbookComponent,
+
     FilterPipe,
     LatestbooksComponent
 
@@ -80,7 +79,7 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'}),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
