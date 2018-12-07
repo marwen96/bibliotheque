@@ -16,17 +16,22 @@ import { Livre } from '../livre';
 export class SinglelivreComponent implements OnInit {
 name: String ;
 single: Livre = null;
-livres: Livre [];
-searchtext: String;
+livrescrime: Livre [];
+livreshistorique: Livre[];
+livresromance: Livre[];
+livresbiography: Livre[];
+
+
   constructor(private _cartshopservice: CartshopService, private service: LivreService, private route: ActivatedRoute) { }
 
   ngOnInit() {
      const id = this.route.snapshot.params['id'];
      this.service.getlivrebyID(id).subscribe((response) => this.single = response);
-      this.service.getlivres().subscribe((response) => this.livres = response );
-
-
-  }
+      this.service.getCrimeBooks().subscribe((response) => this.livrescrime = response);
+      this.service.getRomanceBooks().subscribe((response) => this.livresromance = response);
+      this.service.getBiographyBooks().subscribe((response) => this.livresbiography = response);
+      this.service.getHistoricalBooks().subscribe((response) => this.livreshistorique = response);
+    }
 addTocarte(livre) {
 
 this._cartshopservice.addToCart(livre);

@@ -86,7 +86,7 @@
 										</div>
 									</div>
 
-									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail" (click)="addToCart(single)">
+									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail" (click)="addTocarte(single)">
 										Add to cart
 									</button>
 								</div>
@@ -130,12 +130,13 @@
             Related Books
           </h3>
         </div>
-            <div class="container">
+        <!--si crime-->
+        <div class="container" *ngIf="single.categorie==='crime'">
             <div class="row isotope-grid"  style="position: relative; height: auto ;">
-              <div class="col-sm-6 col-md-4 col-lg-3  p-b-6 isotope-item " *ngFor="let livre of livres  | paginate: {itemsPerPage:4, currentPage: p} "   style=" width: 297px; height: 500px;">
+              <div class="col-sm-6 col-md-4 col-lg-3  p-b-6 isotope-item " *ngFor="let livre of livrescrime  | paginate: {itemsPerPage:4, currentPage: p} "   style=" width: 297px; height: 500px;">
                 <!-- Block2 -->
 
-                <div class="block2" style="height: 450px;" >
+                <div class="block2" style="height: 450px;"  >
                   <div class="block2-pic hov-img0">
                     <img src="../../assets/images/{{livre.id}}.jpg" alt="IMG-PRODUCT" style="height: 400px; width:370px ;">
 
@@ -169,6 +170,130 @@
             <pagination-controls  (pageChange)="p =$event" style="padding-left: 450px; color: cornflowerblue; padding-top: 50px;"></pagination-controls>
               </div>
             </div>
+
+            <!--si romance-->
+            <div class="container" *ngIf="single.categorie==='romance'">
+                <div class="row isotope-grid"  style="position: relative; height: auto ;">
+                  <div class="col-sm-6 col-md-4 col-lg-3  p-b-6 isotope-item " *ngFor="let livre of livresromance  | paginate: {itemsPerPage:4, currentPage: p} "   style=" width: 297px; height: 500px;">
+                    <!-- Block2 -->
+
+                    <div class="block2" style="height: 450px;"  >
+                      <div class="block2-pic hov-img0">
+                        <img src="../../assets/images/{{livre.id}}.jpg" alt="IMG-PRODUCT" style="height: 400px; width:370px ;">
+
+                        <a [routerLink]="['/livres', livre.id]" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                          Quick View
+                        </a>
+                      </div>
+
+                      <div class="block2-txt flex-w flex-t p-t-14">
+                        <div class="block2-txt-child1 flex-col-l ">
+                          <a [routerLink]="['/livres', livre.id]" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                            {{livre.title}}
+                          </a>
+
+                          <span class="stext-105 cl3">
+                            ${{livre.prix}}
+                          </span>
+                        </div>
+
+                        <div class="block2-txt-child2 flex-r p-t-3">
+
+                          <button  class="btn-addwish-b2 dis-block pos-relative js-addwish-b2" (click)="addTocarte(livre)">
+                            <img class="icon-heart1 dis-block trans-04" src="../../assets/images/icons/icon-heart-01.png" alt="ICON">
+                            <img class="icon-heart2 dis-block trans-04 ab-t-l" src="../../assets/images/icons/icon-heart-02.png" alt="ICON">
+                          </button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <pagination-controls  (pageChange)="p =$event" style="padding-left: 450px; color: cornflowerblue; padding-top: 50px;"></pagination-controls>
+                  </div>
+                </div>
+
+                <!--si historique-->
+
+                <div class="container" *ngIf="single.categorie==='Historique'">
+                    <div class="row isotope-grid"  style="position: relative; height: auto ;">
+                      <div class="col-sm-6 col-md-4 col-lg-3  p-b-6 isotope-item " *ngFor="let livre of livreshistorique  | paginate: {itemsPerPage:4, currentPage: p} "   style=" width: 297px; height: 500px;">
+                        <!-- Block2 -->
+
+                        <div class="block2" style="height: 450px;"  >
+                          <div class="block2-pic hov-img0">
+                            <img src="../../assets/images/{{livre.id}}.jpg" alt="IMG-PRODUCT" style="height: 400px; width:370px ;">
+
+                            <a [routerLink]="['/livres', livre.id]" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                              Quick View
+                            </a>
+                          </div>
+
+                          <div class="block2-txt flex-w flex-t p-t-14">
+                            <div class="block2-txt-child1 flex-col-l ">
+                              <a [routerLink]="['/livres', livre.id]" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                {{livre.title}}
+                              </a>
+
+                              <span class="stext-105 cl3">
+                                ${{livre.prix}}
+                              </span>
+                            </div>
+
+                            <div class="block2-txt-child2 flex-r p-t-3">
+
+                              <button  class="btn-addwish-b2 dis-block pos-relative js-addwish-b2" (click)="addTocarte(livre)">
+                                <img class="icon-heart1 dis-block trans-04" src="../../assets/images/icons/icon-heart-01.png" alt="ICON">
+                                <img class="icon-heart2 dis-block trans-04 ab-t-l" src="../../assets/images/icons/icon-heart-02.png" alt="ICON">
+                              </button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <pagination-controls  (pageChange)="p =$event" style="padding-left: 450px; color: cornflowerblue; padding-top: 50px;"></pagination-controls>
+                      </div>
+                    </div>
+
+                    <!--si biography-->
+                    <div class="container" *ngIf="single.categorie==='biographie'">
+                        <div class="row isotope-grid"  style="position: relative; height: auto ;">
+                          <div class="col-sm-6 col-md-4 col-lg-3  p-b-6 isotope-item " *ngFor="let livre of livresbiography  | paginate: {itemsPerPage:4, currentPage: p} "   style=" width: 297px; height: 500px;">
+                            <!-- Block2 -->
+
+                            <div class="block2" style="height: 450px;"  >
+                              <div class="block2-pic hov-img0">
+                                <img src="../../assets/images/{{livre.id}}.jpg" alt="IMG-PRODUCT" style="height: 400px; width:370px ;">
+
+                                <a [routerLink]="['/livres', livre.id]" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                                  Quick View
+                                </a>
+                              </div>
+
+                              <div class="block2-txt flex-w flex-t p-t-14">
+                                <div class="block2-txt-child1 flex-col-l ">
+                                  <a [routerLink]="['/livres', livre.id]" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                    {{livre.title}}
+                                  </a>
+
+                                  <span class="stext-105 cl3">
+                                    ${{livre.prix}}
+                                  </span>
+                                </div>
+
+                                <div class="block2-txt-child2 flex-r p-t-3">
+
+                                  <button  class="btn-addwish-b2 dis-block pos-relative js-addwish-b2" (click)="addTocarte(livre)">
+                                    <img class="icon-heart1 dis-block trans-04" src="../../assets/images/icons/icon-heart-01.png" alt="ICON">
+                                    <img class="icon-heart2 dis-block trans-04 ab-t-l" src="../../assets/images/icons/icon-heart-02.png" alt="ICON">
+                                  </button>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <pagination-controls  (pageChange)="p =$event" style="padding-left: 450px; color: cornflowerblue; padding-top: 50px;"></pagination-controls>
+                          </div>
+                        </div>
 
 
 
