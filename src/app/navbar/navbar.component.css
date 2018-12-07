@@ -1,3 +1,6 @@
 body{
   padding: 80%
 }
+a:hover i {
+  color: cornflowerblue;
+}
