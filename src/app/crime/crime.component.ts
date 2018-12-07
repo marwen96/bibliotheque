@@ -10,6 +10,7 @@ import { Livre } from '../livre';
 })
 export class CrimeComponent implements OnInit {
 Crimes: Livre[] = [];
+searchtext: String;
   constructor(private _livreservice: LivreService, private _cartshop: CartshopService) { }
 
   ngOnInit() {

@@ -1,3 +1,4 @@
+import { FilterPipe } from './../filter.pipe';
 import { HistoricalComponent } from './historical/historical.component';
 import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
@@ -28,6 +29,8 @@ import { CrimeComponent } from './crime/crime.component';
 import { BiographyComponent } from './biography/biography.component';
 import { RomanceComponent } from './romance/romance.component';
 import { HttpXsrfInterceptor } from '@angular/common/http/src/xsrf';
+import { SearchedbookComponent } from './searchedbook/searchedbook.component';
+import { LatestbooksComponent } from './latestbooks/latestbooks.component';
 
 
 
@@ -42,7 +45,8 @@ const appRoutes: Routes = [
 {path: 'categorie/crime', component: CrimeComponent},
 {path: 'categorie/biography', component: BiographyComponent},
 {path: 'categorie/romance', component: RomanceComponent},
-{path: 'categorie/historical', component: HistoricalComponent }
+{path: 'categorie/historical', component: HistoricalComponent },
+{path: 'search', component: SearchedbookComponent}
 
 ];
 
@@ -64,7 +68,10 @@ const appRoutes: Routes = [
     CrimeComponent,
     BiographyComponent,
     RomanceComponent,
-    HistoricalComponent
+    HistoricalComponent,
+    SearchedbookComponent,
+    FilterPipe,
+    LatestbooksComponent
 
 
 

@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+keyword: string ;
   constructor(public _authservice: AuthService,
      public service: LivreService, public _cartshopservice: CartshopService) {
 
@@ -23,5 +23,7 @@ export class NavbarComponent implements OnInit {
 logout() {
 this._authservice.logout();
 }
+filterbooks() {
 
+}
 }

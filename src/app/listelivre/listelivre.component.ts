@@ -11,6 +11,7 @@ import { Livre } from '../livre';
 })
 export class ListelivreComponent implements OnInit {
  livres: Livre [];
+ searchtext: String;
   constructor(public service: LivreService, private _carteservice: CartshopService) { }
 
   ngOnInit() {

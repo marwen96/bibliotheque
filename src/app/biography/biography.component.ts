@@ -12,6 +12,7 @@ export class BiographyComponent implements OnInit {
 
   constructor(private _livreservice: LivreService, private _cartshop: CartshopService) { }
 Biography: Livre[] = [] ;
+searchtext: String;
   ngOnInit() {
     this._livreservice.getBiographyBooks().subscribe((response) => this.Biography = response);
   }
