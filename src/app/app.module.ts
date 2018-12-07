@@ -1,3 +1,4 @@
+import { HistoricalComponent } from './historical/historical.component';
 import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
@@ -22,6 +23,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database' ;
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { LoginComponent } from './login/login.component';
 import { CartShoppingComponent } from './cart-shopping/cart-shopping.component';
+import { CrimeComponent } from './crime/crime.component';
+import { BiographyComponent } from './biography/biography.component';
+import { RomanceComponent } from './romance/romance.component';
+import { HttpXsrfInterceptor } from '@angular/common/http/src/xsrf';
 
 
 
@@ -33,6 +38,10 @@ const appRoutes: Routes = [
 {path: 'livres/:id', component: SinglelivreComponent},
 {path: 'login', component: LoginComponent},
 {path: 'cartshop', component: CartShoppingComponent},
+{path: 'categorie/crime', component: CrimeComponent},
+{path: 'categorie/biography', component: BiographyComponent},
+{path: 'categorie/romance', component: RomanceComponent},
+{path: 'categorie/historical', component: HistoricalComponent }
 
 ];
 
@@ -51,6 +60,10 @@ const appRoutes: Routes = [
     SinglelivreComponent,
     LoginComponent,
     CartShoppingComponent,
+    CrimeComponent,
+    BiographyComponent,
+    RomanceComponent,
+    HistoricalComponent
 
 
 
