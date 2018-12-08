@@ -3,7 +3,7 @@
       <div class="col-lg-9">
           <div class="p-b-10">
               <h3 class="ltext-103 cl5 mb-5">
-                Book Collection
+                BEST OFFER
               </h3>
             </div>
       </div>
@@ -25,7 +25,7 @@
     </div>
     <div class="container">
     <div class="row isotope-grid"  style="position: relative; height: auto ;">
-      <div class="col-sm-6 col-md-4 col-lg-3  p-b-6 isotope-item " *ngFor="let livre of livres  | filter: searchtext | paginate: {itemsPerPage:8, currentPage: p} "   style=" width: 297px; height: 500px;">
+      <div class="col-sm-6 col-md-4 col-lg-3  p-b-6 isotope-item " *ngFor="let livre of livres | filter: searchtext | paginate: {itemsPerPage:8, currentPage: p} "   style=" width: 297px; height: 500px;">
         <!-- Block2 -->
 
         <div class="block2" style="height: 450px;" *ngIf="livre.title!='string'">

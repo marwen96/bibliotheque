@@ -15,7 +15,7 @@ export class LatestbooksComponent implements OnInit {
   constructor(public service: LivreService, private _carteservice: CartshopService) { }
 
   ngOnInit() {
-   this.service.getlivres().subscribe((response) => this.livres = response);
+   this.service.getLatestBooks().subscribe((response) => this.livres = response);
   }
 addTocarte(livre) {
 

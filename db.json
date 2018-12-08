@@ -13,7 +13,7 @@
       "id": "2",
       "title": "Les Cent Meilleurs Romans policiers",
       "ecrivain": "Crime Writers' Association",
-      "prix": 50,
+      "prix": 20,
       "categorie":"crime",
       "description": "Les Cent Meilleurs Romans policiers de tous les temps est une liste estimée, publiée en 1990 par la Crime Writers' Association, une association d'auteurs basée au Royaume-Uni",
       "dateSortie":"2016-11-02"},
@@ -30,7 +30,7 @@
       "id": "4",
       "title": "Les enquêtes de Nicolas Le Floch - : Le prince de Cochinchine ",
       "ecrivain": "Jean-François Parot",
-      "prix": 70,
+      "prix": 45,
       "categorie": "crime",
       "description": "Décédé il y a quelques mois, Jean-François Parot avait écrit un dernier tome des aventures de Nicolas Le Floch, son héros fétiche. Le Prince de Cochinchine demeure dans la droite ligne des volumes précédents, avec tous les ingrédients d’un polar historique. Autour d’un complot visant à accuser le héros d’un meurtre qu’il n’a pas commis, l’auteur tire une intrigue pleine de péripéties, avec toujours un parfum de mystère et restitue parfaitement l'ambiance de l’Ancien Régime. Son personnage principal, très charismatique",
       "dateSortie":"2018-07-04"},
@@ -38,7 +38,7 @@
       "id": "5",
       "title": "L'île au rébus ",
       "ecrivain": "Peter May ",
-      "prix": 35,
+      "prix": 65,
       "categorie":"crime",
       "description": "Voilà vingt ans qu’Adam Killian a été assassiné sur l’île de Groix. Et depuis vingt ans rien n'a été déplacé dans son bureau, là où le défunt a laissé des indices qui permettraient à son fils de confondre son meurtrier, sans imaginer que celui-ci trouverait la mort quelques jours après lui. Tenu par sa promesse d’élucider cette affaire, Enzo Macleod, le spécialiste des scènes de crime, débarque sur la petite île bretonne",
       "dateSortie":"2018-12-01"},
@@ -46,7 +46,7 @@
       "id": "6",
       "title": "Le dompteur de lions ",
       "ecrivain": "Camilla Läckberg ",
-      "prix": 85,
+      "prix": 90,
       "categorie":"crime",
       "description": "Une jeune fille disparue depuis plus de quatre mois erre à moitié nue à travers la forêt enneigée avant d’atterrir sur une route déserte. La voiture arrive de nulle part, le choc est inévitable. L’accident n’explique pourtant pas les yeux crevés de la victime et les nombreuses blessures sur son corps. Lorsqu’Erica Falck commence à exhumer une vieille affaire de meurtre impliquant un ancien dompteur de lions, elle ne se doute pas que les sombres tentacules du passé sont en train de se refermer sur le présent",
       "dateSortie":"2017-11-14"
@@ -55,7 +55,7 @@
       "id": "7",
       "title": "LE CHARDON ET LE TARTAN ",
       "ecrivain": "DIANA GABALDON  ",
-      "prix": 85,
+      "prix": 10,
       "categorie":"romance",
       "description": "Claire s’efforce d’oublier la Seconde Guerre mondiale en Écosse, auprès de son mari rentré du front. Au cours d’une balade, elle est attirée par un menhir… qui la mènera tout droit en l’an 1743, au cœur de la lutte entre Highlanders et Anglais.Le premier tome d’Outlander, la série incontournable de Diana Gabaldon !",
       "dateSortie":"2018-11-24"
@@ -65,7 +65,7 @@
       "id": "8",
       "title": "Avant toi: La trilogie Avant toi ",
       "ecrivain": "Jojo Moyes",
-      "prix": 85,
+      "prix": 16,
       "categorie":"romance",
       "description": "La vie n'attend pas : c'est ici et maintenant... Quand Lou s'envole pour New York, elle est certaine de pouvoir vivre pleinement cette aventure malgré les milliers de kilomètres qui la séparent de Sam. ...",
       "dateSortie":"2018-04-05"
@@ -74,7 +74,7 @@
       "id": "9",
       "title": "Be loved: Saga romantique",
       "ecrivain": "Emy Lie",
-      "prix": 85,
+      "prix": 28,
       "categorie":"romance",
       "description": "Suivez les péripéties amoureuses d'Ava, jeune romancière en herbe !En quittant Duncan, un fiancé arrogant et possessif, Ava, esthéticienne de métier, auteur de passion, décide de reprendre sa vie en ...",
       "dateSortie":"2018-12-02"
@@ -83,7 +83,7 @@
       "id": "10",
       "title": "Dark and Dangerous Love",
       "ecrivain": "Molly Night",
-      "prix": 85,
+      "prix": 46,
       "categorie":"romance",
       "description": "2438. La Terre est désormais dominée par les vampires et les humains ne sont rien d'autre qu'objets de plaisir et nourriture pour les immortels. Le plus vieux et le plus puissant d'entre eux, Atticus, est le roi de ce nouvel ordre mondial. ...",
       "dateSortie":"2018-12-06"
@@ -92,7 +92,7 @@
       "id": "11",
       "title": "International Guy: Paris, New York, Copenhagen",
       "ecrivain": "Audrey Carlan",
-      "prix": 85,
+      "prix": 70,
       "categorie":"romance",
       "description": "2438. La Terre est désormais dominée par les vampires et les humains ne sont rien d'autre qu'objets de plaisir et nourriture pour les immortels. Le plus vieux et le plus puissant d'entre eux, Atticus, est le roi de ce nouvel ordre mondial. ...",
       "dateSortie":"2018-05-18"
@@ -101,7 +101,7 @@
       "id": "12",
       "title": "La nuit sur les toits",
       "ecrivain": "Victoire Sentenac",
-      "prix": 85,
+      "prix": 100,
       "categorie":"romance",
       "description": "Elisa vit une quarantaine paisible, en apparence. Son mari Guillaume, cadre de santé, sa profession de juriste, et surtout ses deux jeunes enfants suffisent à son bonheur. Mais son passé va se rappeler à elle brutalement, et la replonger dans les affres d’une passion dont elle pensait pourtant être sortie. ...",
       "dateSortie":"2018-07-07"
@@ -110,7 +110,7 @@
       "id": "13",
       "title": "Nouvelle-France",
       "ecrivain": "Michel Jean Gauthier",
-      "prix": 85,
+      "prix": 12,
       "categorie":"Historique",
       "description": "XVIIe siècle La guerre entre les catholiques et les protestants a laissé La Rochelle dans un état précaire. Joachim Reguindeau doit quitter cette ville où il n’a plus d’attache. Grâce à de faux papiers, l’orphelin se fait engager par les marchands Grignon, Gaigneur et Masse et se rend en Amérique. ...",
       "dateSortie":"2018-10-08"
@@ -119,7 +119,7 @@
       "id": "14",
       "title": "Le sang des uniformes: ",
       "ecrivain": "Denis Leypold",
-      "prix": 85,
+      "prix": 16,
       "categorie":"Historique",
       "description": "Ils sont issus d'une même famille originaire d'Alsace que la guerre de 1870 sépare et que celle de 1914 oppose. Henri, 19 ans, est soldat dans l'infanterie allemande. Comme plusieurs de ses camarades, il est natif d'une vallée des Vosges alsacienne et il sera opposé aux forces anglaises. ...",
       "dateSortie":"2018-12-03"
@@ -128,7 +128,7 @@
       "id": "15",
       "title": "La Fille des Templiers  ",
       "ecrivain": "Mireille Calmel",
-      "prix": 85,
+      "prix": 24,
       "categorie":"Historique",
       "description": "19 mars 1314. Jacques de Molay, le dernier grand maître de l’Ordre du Temple, est brûlé en place publique.Il a été condamné par le roi Philippe le Bel qui reproche aux Templiers de dissimuler",
       "dateSortie":"2018-11-15"
@@ -137,7 +137,7 @@
       "id": "16",
       "title": "Le Dernier Bain",
       "ecrivain": "Gwenaële ROBERT",
-      "prix": 85,
+      "prix": 36,
       "categorie":"Historique",
       "description": "Paris, an II. La France vibre sous le souffle de la Terreur. Jane, une jeune Anglaise cachée dans l'appartement d'aristocrates émigrés, Théodose, un moine qui a renié sa foi par peur de la guillotine,",
       "dateSortie":"2017-01-07"
@@ -146,7 +146,7 @@
       "id": "17",
       "title": "Bleu de Prusse ",
       "ecrivain": "Philip Kerr",
-      "prix": 85,
+      "prix": 52,
       "categorie":"Historique",
       "description": "Bleu de Prusse est un roman policier historique de Philip Kerr paru en anglais en 2017 et en français en mai 2018. Cet antépénultième roman de l'auteur met en scène le policier Bernie Gunther pour la douzième fois.",
       "dateSortie":"2017-12-27"
@@ -155,7 +155,7 @@
       "id": "18",
       "title": "Les Piliers de la terre ",
       "ecrivain": "Ken Follett",
-      "prix": 85,
+      "prix": 72,
       "categorie":"Historique",
       "description": "Les Piliers de la Terre est un roman historique de Ken Follett, écrit en 1989, et publié en français en 1990. L'action se situe dans l'Angleterre du XIIᵉ siècle et tourne autour de la construction d'une cathédrale par le prieur du village de Kingsbridge",
       "dateSortie":"2018-02-11"
@@ -164,7 +164,7 @@
       "id": "19",
       "title": "L’antarctique, le rêve d’une vie ",
       "ecrivain": "Ken Follett",
-      "prix": 85,
+      "prix": 5,
       "categorie":"biographie",
       "description": "Traverser l'Antarctique, c'était mon rêve d'enfant. J'ai décidé d'affronter cette immensité blanche en empruntant un itinéraire jamais exploré, le plus long que l'on puisse envisager : 5 100 km d'une trace ...",
       "dateSortie":"2018-10-28"
@@ -173,7 +173,7 @@
       "id": "20",
       "title": "Life: Il était condamné,  ",
       "ecrivain": "Franck Dufourmantelle",
-      "prix": 85,
+      "prix": 13,
       "categorie":"biographie",
       "description": "Brûlé à 95%, il survit grâce à la greffe de peau de son jumeau. Une première médicale mondiale. Un matin de septembre 2016, Franck, technicien chimiste, manipule un bidon inflammable. Une explosion le fait flamber. Son corps est brûlé́ à 95 %, ses organes vitaux menacés. ...",
       "dateSortie":"2018-06-25"
@@ -182,7 +182,7 @@
       "id": "21",
       "title": "Vie et légendes de Charles Aznavour ",
       "ecrivain": "Robert Belleret",
-      "prix": 85,
+      "prix": 21,
       "categorie":"biographie",
       "description": "Il se voyait en haut de l'affiche... Après 67 ans de carrière en solo, il est cette légende qu'il aspirait tant à devenir. Depuis aout 2017, son étoile brille sur Sunset Boulevard. C'est peu dire qu'Aznavour est un artiste d'exception : il collectionne les records",
       "dateSortie":"2018-11-17"
@@ -191,7 +191,7 @@
       "id": "22",
       "title": "Je suis né à 17 ans ",
       "ecrivain": "Jean-Philippe",
-      "prix": 85,
+      "prix": 37,
       "categorie":"biographie",
       "description": "Thierry Beccaro, animateur de télévision et comédien parmi les plus populaires, témoigne pour la première fois sur son passé d'enfant battu. Il se livre aujourd'hui afin de libérer la parole sur ce fléau dont souffrent des milliers d'enfants dans notre pays.",
       "dateSortie":"2018-09-18"
@@ -209,7 +209,7 @@
       "id": "24",
       "title": "Entre océan et mer noire",
       "ecrivain": "Ken Follett",
-      "prix": 85,
+      "prix": 61,
       "categorie":"biographie",
       "description": "Avec le temps, la peine ne s’estompe pas. Chaque jour qui passe, Ludo me manque davantage. Je pensais vieillir à ses côtés. Aujourd’hui, je passe mes nuits à pleurer. Je regarde nos photos, je me blottis dans ses vêtements. Je ne parviens pas à accepter que je ne le reverrai plus. ...",
       "dateSortie":"2018-09-19"

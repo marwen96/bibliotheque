@@ -20,8 +20,12 @@
         <div class="menu-desktop">
           <ul class="main-menu">
 
+
+
+
+
             <li>
-              <a  *ngIf="_authservice.user$ | async as user"   class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BOOKS</a>
+              <a     class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BOOKS</a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
                 <a class="dropdown-item" routerLink="livres">All</a>
                 <a class="dropdown-item" routerLink="categorie/crime">CRIME</a>
@@ -38,13 +42,11 @@
 
 
 
-            <li routerLinkActive="active-menu">
+            <li routerLinkActive="active-menu" style="font-size: 14px;">
               <a routerLink="contact">CONTACT US</a>
             </li>
 
-            <li *ngIf="!(_authservice.user$ | async)" routerLinkActive="active-menu">
-              <a routerLink="login">LOGIN</a>
-            </li>
+
           </ul>
 
         </div>
@@ -62,11 +64,23 @@
             <i class="zmdi zmdi-shopping-cart"></i>
           </a>
 
-            <a *ngIf="!!(_authservice.user$ | async)" class="ml-3" (click)="logout()"  routerLink="#" style="font-size: 1.5em; color: black;" ><i class="fas fa-door-open" ></i></a>
+
 
             <li *ngIf="!(_authservice.user$ | async)" >
-              <a routerLink="login" class="ml-5" style="font-size: 1.5em; color: black;"><i class="fas fa-door-closed"></i></a>
+              <a routerLink="login" class="ml-5"><i class="fas fa-door-closed" style="font-size: 1.3em; color:black; margin-right: 5px;" ></i><span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">LOGIN</span></a>
             </li>
+
+            <img *ngIf="_authservice.user$ | async as user" class="rounded-circle" src={{user.photoURL}} style="height: 30px;width: 30px; margin-left: 30px;">
+            <div class="dropdown">
+                <a *ngIf="(_authservice.user$ | async) as user" class=  "dropdown-toggle" href="#"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">
+                  {{user.displayName}}
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="margin-top: 27px;">
+                  <a class="dropdown-item" routerLink="cartshop"><i class="fas fa-shopping-cart" style="font-size: 1.3em; color:black; margin-right: 5px;"></i><span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">MY ORDERS</span></a>
+                  <a class="dropdown-item" (click)="logout()"  href="#"  ><i class="fas fa-door-open" style="font-size: 1.3em; color:black; margin-right: 5px;" ></i><span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">LOG OUT</span></a>
+                </div>
+              </div>
 
           </div>
       </nav>

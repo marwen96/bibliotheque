@@ -5,5 +5,5 @@ export interface Livre {
   categorie: string;
   prix: number;
   description: string;
-  dateSortie: Date  ;
+  dateSortie: string  ;
 }

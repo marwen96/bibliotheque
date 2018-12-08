@@ -8,7 +8,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
   providedIn: 'root'
 })
 export class LivreService {
-
+today: Date = new Date();
 
   constructor(private http: HttpClient) { }
 
@@ -32,5 +32,11 @@ getRomanceBooks() {
 getBiographyBooks() {
   return this.http.get<Livre []>('http://localhost:3000/livres?categorie=biographie');
 }
-
+getBestOffer() {
+  return this.http.get<Livre []>('http://localhost:3000/livres?prix_lte=20');
+}
+getLatestBooks() {
+  // tslint:disable-next-line:max-line-length
+  return this.http.get<Livre []>('http://localhost:3000/livres?dateSortie_gte=' + this.today.getFullYear() + '-' + this.today.getMonth() + 1 + '-01');
+}
 }

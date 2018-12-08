@@ -1,3 +1,4 @@
+import { AuthGardService } from './auth-gard.service';
 import { LatestPipe } from './latest.pipe';
 import { FilterPipe } from './../filter.pipe';
 import { HistoricalComponent } from './historical/historical.component';
@@ -32,6 +33,7 @@ import { RomanceComponent } from './romance/romance.component';
 import { HttpXsrfInterceptor } from '@angular/common/http/src/xsrf';
 
 import { LatestbooksComponent } from './latestbooks/latestbooks.component';
+import { BestofferComponent } from './bestoffer/bestoffer.component';
 
 
 
@@ -42,12 +44,13 @@ const appRoutes: Routes = [
 {path: 'livres', component: ListelivreComponent},
 {path: 'livres/:id', component: SinglelivreComponent},
 {path: 'login', component: LoginComponent},
-{path: 'cartshop', component: CartShoppingComponent},
+{path: 'cartshop', component: CartShoppingComponent , canActivate: [AuthGardService]},
 {path: 'categorie/crime', component: CrimeComponent},
 {path: 'categorie/biography', component: BiographyComponent},
 {path: 'categorie/romance', component: RomanceComponent},
 {path: 'categorie/historical', component: HistoricalComponent },
-{path: 'latest', component: LatestbooksComponent}
+{path: 'latest', component: LatestbooksComponent},
+{path: 'bestoffer', component: BestofferComponent}
 
 ];
 
@@ -72,7 +75,8 @@ const appRoutes: Routes = [
 
     FilterPipe,
     LatestbooksComponent,
-    LatestPipe
+    LatestPipe,
+    BestofferComponent
 
 
 

@@ -5,10 +5,10 @@ import { Livre } from './livre';
   name: 'latest'
 })
 export class LatestPipe implements PipeTransform {
-  transform(items: Livre[], year: string , datelivre: String): Livre[] {
+  transform(items: Livre[], year: string ): Livre[] {
     if (!items) { return []; }
 return items.filter( it => {
-      return datelivre.includes(year);
+      return it.dateSortie.includes(year);
     });
    }
 }
