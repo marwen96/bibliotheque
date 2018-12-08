@@ -11,6 +11,7 @@ import { Livre } from '../livre';
 })
 export class CartShoppingComponent implements OnInit {
 Cartes: Livre [] = [] ;
+total: any = 0;
   constructor(private _cartshopservice: CartshopService) { }
 
   ngOnInit() {
@@ -18,5 +19,8 @@ this.Cartes = this._cartshopservice.Cartes ;
   }
 remove(carte) {
   this._cartshopservice.remove(carte);
+}
+calcultotal() {
+
 }
 }

@@ -1,3 +1,4 @@
+import { AuthService } from './../auth.service';
 import { CartshopService } from './../cartshop.service';
 
 import { LivreService } from './../livre.service';
@@ -12,7 +13,7 @@ import { Livre } from '../livre';
 export class ListelivreComponent implements OnInit {
  livres: Livre [];
  searchtext: String;
-  constructor(public service: LivreService, private _carteservice: CartshopService) { }
+  constructor(public service: LivreService, private _carteservice: CartshopService, public _authservice: AuthService) { }
 
   ngOnInit() {
    this.service.getlivres().subscribe((response) => this.livres = response);

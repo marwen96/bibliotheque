@@ -1,3 +1,4 @@
+import { AuthService } from './../auth.service';
 import { CartshopService } from './../cartshop.service';
 import { LivreService } from './../livre.service';
 import { Component, OnInit } from '@angular/core';
@@ -11,7 +12,7 @@ import { Livre } from '../livre';
 export class CrimeComponent implements OnInit {
 Crimes: Livre[] = [];
 searchtext: String;
-  constructor(private _livreservice: LivreService, private _cartshop: CartshopService) { }
+  constructor(private _livreservice: LivreService, private _cartshop: CartshopService, public _authservice: AuthService) { }
 
   ngOnInit() {
     this._livreservice.getCrimeBooks().subscribe((response) => this.Crimes = response);

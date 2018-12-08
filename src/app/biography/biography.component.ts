@@ -1,3 +1,4 @@
+import { AuthService } from './../auth.service';
 import { Component, OnInit } from '@angular/core';
 import { CartshopService } from '../cartshop.service';
 import { LivreService } from '../livre.service';
@@ -10,7 +11,7 @@ import { Livre } from '../livre';
 })
 export class BiographyComponent implements OnInit {
 
-  constructor(private _livreservice: LivreService, private _cartshop: CartshopService) { }
+  constructor(private _livreservice: LivreService, private _cartshop: CartshopService, public _authservice: AuthService) { }
 Biography: Livre[] = [] ;
 searchtext: String;
   ngOnInit() {

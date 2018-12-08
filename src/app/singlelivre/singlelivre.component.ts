@@ -1,3 +1,4 @@
+import { AuthService } from './../auth.service';
 import { CartshopService } from './../cartshop.service';
 import { Observable } from 'rxjs';
 import { ListelivreComponent } from './../listelivre/listelivre.component';
@@ -22,7 +23,8 @@ livresromance: Livre[];
 livresbiography: Livre[];
 
 
-  constructor(private _cartshopservice: CartshopService, private service: LivreService, private route: ActivatedRoute) { }
+  // tslint:disable-next-line:max-line-length
+  constructor(private _cartshopservice: CartshopService, private service: LivreService, private route: ActivatedRoute, public _authservice: AuthService) { }
 
   ngOnInit() {
      const id = this.route.snapshot.params['id'];

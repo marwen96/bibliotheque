@@ -70,7 +70,7 @@
               <a routerLink="login" class="ml-5"><i class="fas fa-door-closed" style="font-size: 1.3em; color:black; margin-right: 5px;" ></i><span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">LOGIN</span></a>
             </li>
 
-            <img *ngIf="_authservice.user$ | async as user" class="rounded-circle" src={{user.photoURL}} style="height: 30px;width: 30px; margin-left: 30px;">
+            <img *ngIf="_authservice.user$ | async as user" class="rounded-circle" [src]="user.photoURL" style="height: 30px;width: 30px; margin-left: 30px;">
             <div class="dropdown">
                 <a *ngIf="(_authservice.user$ | async) as user" class=  "dropdown-toggle" href="#"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">
                   {{user.displayName}}
@@ -78,7 +78,7 @@
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="margin-top: 27px;">
                   <a class="dropdown-item" routerLink="cartshop"><i class="fas fa-shopping-cart" style="font-size: 1.3em; color:black; margin-right: 5px;"></i><span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">MY ORDERS</span></a>
-                  <a class="dropdown-item" (click)="logout()"  href="#"  ><i class="fas fa-door-open" style="font-size: 1.3em; color:black; margin-right: 5px;" ></i><span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">LOG OUT</span></a>
+                  <button class="dropdown-item" (click)="logout()"    ><i class="fas fa-door-open" style="font-size: 1.3em; color:black; margin-right: 5px;" ></i><span style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 16px; color:dimgrey;">LOG OUT</span></button>
                 </div>
               </div>
 

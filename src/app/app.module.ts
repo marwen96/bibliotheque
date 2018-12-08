@@ -34,6 +34,7 @@ import { HttpXsrfInterceptor } from '@angular/common/http/src/xsrf';
 
 import { LatestbooksComponent } from './latestbooks/latestbooks.component';
 import { BestofferComponent } from './bestoffer/bestoffer.component';
+import { TopsellingComponent } from './topselling/topselling.component';
 
 
 
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
 {path: 'categorie/romance', component: RomanceComponent},
 {path: 'categorie/historical', component: HistoricalComponent },
 {path: 'latest', component: LatestbooksComponent},
-{path: 'bestoffer', component: BestofferComponent}
+{path: 'bestoffer', component: BestofferComponent},
+{path: 'topselling', component: TopsellingComponent}
 
 ];
 
@@ -76,7 +78,8 @@ const appRoutes: Routes = [
     FilterPipe,
     LatestbooksComponent,
     LatestPipe,
-    BestofferComponent
+    BestofferComponent,
+    TopsellingComponent
 
 
 

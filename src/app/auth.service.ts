@@ -21,5 +21,6 @@ user$: Observable<firebase.User>;
   }
   logout() {
     this.afauth.auth.signOut();
+    this.router.navigate(['']);
   }
 }

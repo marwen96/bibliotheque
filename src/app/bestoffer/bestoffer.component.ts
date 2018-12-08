@@ -1,3 +1,4 @@
+import { AuthService } from './../auth.service';
 import { Component, OnInit } from '@angular/core';
 import { Livre } from '../livre';
 import { LivreService } from '../livre.service';
@@ -11,7 +12,7 @@ import { CartshopService } from '../cartshop.service';
 export class BestofferComponent implements OnInit {
   livres: Livre [];
   searchtext: String;
-   constructor(public service: LivreService, private _carteservice: CartshopService) { }
+   constructor(public service: LivreService, private _carteservice: CartshopService, public _authservice: AuthService) { }
 
    ngOnInit() {
     this.service.getBestOffer().subscribe((response) => this.livres = response);
